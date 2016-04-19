@@ -1,0 +1,12 @@
+language: java
+#- 3.3
+notifications:
+email: false
+# Setup anaconda
+before_install:
+
+install:
+ - sudo apt-get install unzip
+ - wget https://releases.hashicorp.com/packer/0.10.0/packer_0.10.0_linux_amd64.zip
+ - unzip packer_0.10.0_linux_amd64.zip
+ - ./packer build showyourworking/deployment/packer/base_box.json
