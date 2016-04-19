@@ -1,0 +1,3 @@
+[submodule "showyourworking"]
+	path = showyourworking
+	url = https://github.com/thesgc/chembiohub_ws
