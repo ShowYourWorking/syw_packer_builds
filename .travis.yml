@@ -15,7 +15,7 @@ install:
  - sudo apt-get install virtualbox-dkms
  - sudo apt-get install virtualbox-ose-dkms linux-headers-generic
  - sudo dpkg-reconfigure virtualbox-dkms
- - sudo dpkg-reconfigure virtualbox
+ - sudo dpkg-reconfigure virtualbox-4.3
  - sudo modprobe vboxdrv
  - sudo modprobe vboxnetflt
  - cd showyourworking/deployment/packer/
