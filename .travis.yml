@@ -14,6 +14,10 @@ install:
  - sudo apt-get remove virtualbox-dkms
  - sudo apt-get install virtualbox-dkms
  - sudo apt-get install virtualbox-ose-dkms linux-headers-generic
+ - sudo dpkg-reconfigure virtualbox-dkms
+ - sudo dpkg-reconfigure virtualbox
+ - sudo modprobe vboxdrv
+ - sudo modprobe vboxnetflt
  - cd showyourworking/deployment/packer/
  - wget https://releases.hashicorp.com/packer/0.10.0/packer_0.10.0_linux_amd64.zip
  - unzip packer_0.10.0_linux_amd64.zip
