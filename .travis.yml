@@ -10,7 +10,6 @@ install:
  - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
  - echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib"| sudo tee --append /etc/apt/sources.list
  - sudo apt-get update
- - sudo apt-get upgrade
  - sudo apt-get install virtualbox-4.3
  - sudo apt-get remove virtualbox-dkms
  - sudo apt-get install virtualbox-dkms
