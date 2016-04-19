@@ -8,9 +8,9 @@ before_install:
 install:
  - sudo apt-get install unzip
  - wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
- - sudo apt-add-repository "deb http://download.virtualbox.org/virtualbox/debian trusty contrib"
+ - sudo echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib" >> /etc/apt/sources.list
  - sudo apt-get update
- - sudo apt-get install virtualbox-5.0
+ - sudo apt-get install virtualbox
  - cd showyourworking/deployment/packer/
  - wget https://releases.hashicorp.com/packer/0.10.0/packer_0.10.0_linux_amd64.zip
  - unzip packer_0.10.0_linux_amd64.zip
